@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="canonical" href="https://etrn-nakladnye.veridok.ru/price.html">
+<title>Цена — оформление ЭТрН и контроль подписей</title>
+<meta name="description" content="Цена сервиса оформления электронных транспортных накладных ЭТрН и контроля подписей в ГИС ЭПД для грузоотправителей и перевозчиков.">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+<script src="smoke.js" defer></script>
+<script>
+  /* Открыт экран цен — price_view через smoke.js (window.smokeTrack). */
+  document.addEventListener("DOMContentLoaded", function () { if (window.smokeTrack) window.smokeTrack("price_view"); });
+</script>
+</head>
+<body data-page="price">
+
+<header><div class="wrap">
+  <div class="logo"><a href="index.html" data-ev="click_logo_home">ЭТрН по рейсам</a></div>
+  <nav class="top"><a href="index.html#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="index.html#primer" data-ev="click_nav_primer">Пример</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>Тариф и цена</h1>
+    <p class="sub">Накладные из данных рейса, контроль подписей и список зависших. Плата оператору ЭДО за документ — отдельно, по его тарифу.</p>
+  </div>
+
+  <section id="cena">
+    <div class="grid">
+      <div class="card"><b>До 300 рейсов в месяц</b><span>4 900 ₽ в месяц — до 300 накладных.</span><br><a class="btn" href="pay.html?plan=do_300" data-ev="payment_click click_pay_do_300">Оплатить — 4 900 ₽</a></div>
+      <div class="card"><b>До 1 500 рейсов в месяц</b><span>12 900 ₽ в месяц — до 1 500 накладных.</span><br><a class="btn" href="pay.html?plan=do_1500" data-ev="payment_click click_pay_do_1500">Оплатить — 12 900 ₽</a></div>
+    </div>
+    <p class="note nalog">Цены указаны без НДС.</p>
+    <p class="cta-note">Ранний доступ · Оплата на этой странице пока не принимается</p>
+    <div class="actions"><a class="btn" href="index.html" data-ev="click_back">Вернуться к описанию</a></div>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
+  <p class="muted">Оформление и контроль ЭТрН по вашим данным через вашего оператора ЭДО. Подписывают участники перевозки; плата оператору — по его тарифу.</p>
+</div></footer>
+
+</body>
+</html>
