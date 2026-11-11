@@ -8,6 +8,10 @@
 <meta name="description" content="Для грузоотправителей и перевозчиков с потоком рейсов: ЭТрН из данных рейса, отправка через вашего оператора ЭДО и контроль подписей в ГИС ЭПД.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -62,38 +66,68 @@
 </head>
 <body>
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">ЭТрН по рейсам</a></div>
-  <nav class="top"><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">ЭТрН по рейсам</a>
+  <nav><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Электронные транспортные накладные на каждый рейс — без отдельного специалиста по ЭТрН</h1>
-    <p class="sub">Для грузоотправителей и перевозчиков, у которых рейсов много: сервис собирает ЭТрН из данных рейса, отправляет на подпись через вашего оператора ЭДО и показывает, где накладная застряла и кто ещё не подписал.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">Мне это нужно</a>
-    <p class="cta-note">Ранний доступ · Оплата на этой странице пока не принимается</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Для грузоотправителей и перевозчиков</p>
+      <h1 class="rise" style="--i:1" data-len="long">Электронные транспортные накладные на каждый рейс&nbsp;<span class="soft">— без отдельного специалиста по ЭТрН</span></h1>
+      <p class="rise" style="--i:2">Для грузоотправителей и перевозчиков, у которых рейсов много: сервис собирает ЭТрН из данных рейса, отправляет на подпись через вашего оператора ЭДО и показывает, где накладная застряла и кто ещё не подписал.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">Мне это нужно</a>
+      <p class="meta rise" style="--i:4">Ранний доступ · Оплата на этой странице пока не принимается</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="160" font-size="40" fill="#0a1524" font-weight="600">транспортные накладные</text><line x1="120" y1="200" x2="1080" y2="200" stroke="#dde2ea" stroke-width="3" fill="none" /><rect x="120" y="250" width="44" height="44" rx="8" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><text x="190" y="282" font-size="30" fill="#0a1524" font-weight="600">Накладная из рейса</text><rect x="120" y="350" width="44" height="44" rx="8" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><text x="190" y="382" font-size="30" fill="#0a1524" font-weight="600">Список зависших</text><rect x="120" y="450" width="44" height="44" rx="8" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><rect x="190" y="460" width="260" height="24" rx="12" fill="#dde2ea" /><rect x="120" y="550" width="44" height="44" rx="8" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><rect x="190" y="560" width="180" height="24" rx="12" fill="#dde2ea" /><rect x="680" y="240" width="380" height="430" rx="20" fill="#dfe8f7" /><text x="710" y="310" font-size="30" fill="#0a1524" font-weight="600">Подписи участников</text><rect x="720" y="370" width="280" height="48" rx="24" fill="#12397a" /><rect x="720" y="450" width="280" height="48" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="720" y="530" width="280" height="48" rx="24" fill="#dfe8f7" /></svg></figure>
+    <dl class="facts">
+      <div><dt>Для</dt><dd>Грузоотправителей и перевозчиков</dd></div>
+      <div><dt>Накладная</dt><dd>Собирает ЭТрН из данных</dd></div>
+      <div><dt>Подпись</dt><dd>Отправляет на подпись</dd></div>
+      <div><dt>Доступ</dt><dd>Ранний доступ</dd></div>
+    </dl>
+  </section>
 
   <section id="chto" data-view="features_view">
-    <h2>Что вы получаете</h2>
-    <div class="grid">
-      <div class="card"><b>Накладная из рейса</b><span>Груз, адреса, машина и водитель — из заявки или выгрузки учёта.</span><br><a class="btn" href="price.html" data-ev="feature_iz_reysa">Мне это нужно</a></div>
-      <div class="card"><b>Подписи участников</b><span>Видно, кто из участников перевозки подписал, а кто нет.</span><br><a class="btn" href="price.html" data-ev="feature_podpisi">Мне это нужно</a></div>
-      <div class="card"><b>Список зависших</b><span>Накладные без подписи дольше обычного — отдельным списком.</span><br><a class="btn" href="price.html" data-ev="feature_zavisshie">Мне это нужно</a></div>
-      <div class="card"><b>Ваш оператор ЭДО</b><span>Работа через оператора, с которым вы уже подключены.</span><br><a class="btn" href="price.html" data-ev="feature_operator">Мне это нужно</a></div>
+    <div class="stack"><h2>Что вы получаете</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="60" width="660" height="480" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="140" font-size="36" fill="#0a1524" font-weight="600">Накладная из рейса</text><rect x="120" y="210" width="48" height="48" rx="8" fill="#ffffff" stroke="#12397a" stroke-width="4" /><rect x="200" y="222" width="360" height="24" rx="12" fill="#b9c3d2" /><polyline points="132,236 142,246 158,226" fill="none" stroke="#12397a" stroke-width="4" /><rect x="120" y="310" width="48" height="48" rx="8" fill="#ffffff" stroke="#12397a" stroke-width="4" /><rect x="200" y="322" width="280" height="24" rx="12" fill="#b9c3d2" /><polyline points="132,336 142,346 158,326" fill="none" stroke="#12397a" stroke-width="4" /><rect x="120" y="410" width="48" height="48" rx="8" fill="#ffffff" stroke="#12397a" stroke-width="4" /><rect x="200" y="422" width="220" height="24" rx="12" fill="#b9c3d2" /></svg></div>
+        <h3>Накладная из рейса</h3><p>Груз, адреса, машина и водитель — из заявки или выгрузки учёта.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_iz_reysa">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="120" y="70" width="560" height="470" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="160" y="150" font-size="36" fill="#0a1524" font-weight="600">Подписи участников</text><rect x="160" y="230" width="420" height="22" rx="11" fill="#12397a" /><rect x="160" y="290" width="360" height="22" rx="11" fill="#dde2ea" /><rect x="160" y="350" width="300" height="22" rx="11" fill="#dde2ea" /><rect x="160" y="410" width="180" height="22" rx="11" fill="#dde2ea" /><circle cx="580" cy="460" r="42" fill="#dfe8f7" stroke="#12397a" stroke-width="4" /><polyline points="558,460 574,476 606,440" fill="none" stroke="#12397a" stroke-width="5" /></svg></div>
+        <h3>Подписи участников</h3><p>Видно, кто из участников перевозки подписал, а кто нет.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_podpisi">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><text x="70" y="110" font-size="34" fill="#0a1524" font-weight="600">Список зависших</text><rect x="60" y="160" width="250" height="370" rx="18" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="490" y="160" width="250" height="370" rx="18" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="90" y="250" width="160" height="20" rx="10" fill="#dde2ea" /><rect x="90" y="320" width="120" height="20" rx="10" fill="#dde2ea" /><rect x="90" y="390" width="90" height="20" rx="10" fill="#dde2ea" /><rect x="520" y="250" width="180" height="20" rx="10" fill="#b9c3d2" /><rect x="520" y="320" width="140" height="20" rx="10" fill="#b9c3d2" /><rect x="520" y="390" width="110" height="20" rx="10" fill="#b9c3d2" /><path d="M 330 340 L 460 340" fill="none" stroke="#12397a" stroke-width="6" /><polygon points="460,326 490,340 460,354" fill="#12397a" /></svg></div>
+        <h3>Список зависших</h3><p>Накладные без подписи дольше обычного — отдельным списком.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_zavisshie">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="60" width="660" height="480" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="140" font-size="36" fill="#0a1524" font-weight="600">Ваш оператор ЭДО</text><rect x="120" y="210" width="100" height="70" rx="12" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="260" y="210" width="100" height="70" rx="12" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="400" y="210" width="100" height="70" rx="12" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="540" y="210" width="100" height="70" rx="12" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="120" y="320" width="100" height="70" rx="12" fill="#12397a" /><rect x="260" y="320" width="100" height="70" rx="12" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="400" y="320" width="100" height="70" rx="12" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="540" y="320" width="100" height="70" rx="12" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="120" y="430" width="100" height="70" rx="12" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="260" y="430" width="100" height="70" rx="12" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="400" y="430" width="100" height="70" rx="12" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="540" y="430" width="100" height="70" rx="12" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /></svg></div>
+        <h3>Ваш оператор ЭДО</h3><p>Работа через оператора, с которым вы уже подключены.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_operator">Мне это нужно</a>
+      </article>
     </div>
   </section>
 
-  <section id="primer" data-view="example_view">
-    <h2>Пример (вымышленные данные)</h2>
-    <p class="fine">Производитель стройматериалов отправляет по сорок машин в день разными перевозчиками. Логист выгружает рейсы дня из учётной программы, сервис собирает по ним накладные и отправляет их через оператора ЭДО, с которым компания уже работает. К вечеру в списке зависших три накладные: в двух не подписал перевозчик, в одной водитель не отметил приём груза. Логист пишет перевозчику, не открывая каждую накладную по очереди.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+  <section id="primer" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Пример</h2>
+      <p>Производитель стройматериалов отправляет по сорок машин в день разными перевозчиками. Логист выгружает рейсы дня из учётной программы, сервис собирает по ним накладные и отправляет их через оператора ЭДО, с которым компания уже работает. К вечеру в списке зависших три накладные: в двух не подписал перевозчик, в одной водитель не отметил приём груза. Логист пишет перевозчику, не открывая каждую накладную по очереди.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="240" y1="150" x2="960" y2="150" stroke="#dde2ea" stroke-width="6" fill="none" /><circle cx="240" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><circle cx="600" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><circle cx="960" cy="150" r="22" fill="#12397a" /><text x="240" y="240" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">Логист</text><text x="600" y="240" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">накладные</text><text x="960" y="240" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">зависших</text><rect x="100" y="310" width="1000" height="420" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="150" y="400" font-size="36" fill="#0a1524" font-weight="600">списке зависших</text><rect x="160" y="480" width="64" height="64" rx="12" fill="#12397a" /><rect x="250" y="480" width="64" height="64" rx="12" fill="#dfe8f7" /><rect x="340" y="480" width="64" height="64" rx="12" fill="#dfe8f7" /><rect x="430" y="480" width="64" height="64" rx="12" fill="#dfe8f7" /><rect x="520" y="480" width="64" height="64" rx="12" fill="#dfe8f7" /><text x="150" y="660" font-size="32" fill="#566174">приём груза</text></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Как это работает</h2>
-    <p>Электронная транспортная накладная — ЭТрН — оформляется в ГИС ЭПД через оператора электронного документооборота. Её подписывают несколько участников перевозки, и пока все не подписали, документ не завершён.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Как это работает</h2></div>
+    <div class="stack">
+      <p>Электронная транспортная накладная — ЭТрН — оформляется в ГИС ЭПД через оператора электронного документооборота. Её подписывают несколько участников перевозки, и пока все не подписали, документ не завершён.</p>
     <p>Когда рейсов немного, с этим справляется логист или бухгалтер: открыть кабинет оператора, заполнить накладную, отправить, проверить подписи. Когда рейсов десятки в день, это становится отдельной работой.</p>
     <p>Это видно по рынку труда. На hh.ru по фразе «электронные транспортные накладные ЭТрН» в октябре 2026 года — около трёхсот вакансий от разных работодателей: специалисты и операторы по работе с ЭТрН, специалисты документооборота в логистике. Компании держат отдельного человека только для того, чтобы накладные оформлялись и подписывались вовремя.</p>
     <p>Сервис берёт на себя рутину, ради которой нанимают такого специалиста. Он не заменяет оператора ЭДО: накладные отправляются через того оператора, с которым вы уже подключены, и по его тарифу за документ.</p>
@@ -107,31 +141,34 @@
     <p>Данные рейсов и накладных используются только для оформления и контроля документов и не передаются третьим лицам, кроме вашего оператора ЭДО.</p>
     <p>Сервис рассчитан на грузоотправителей и перевозчиков в России, у которых поток рейсов и электронных накладных. Сейчас он в подготовке: сначала мы проверяем, нужен ли он логистам.</p>
     <p>Сервис готовит и отслеживает накладные по вашим данным; подписывают документы участники перевозки, а ответственность за сведения в накладной несёт тот, кто её подписал.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Вопросы и ответы</h2>
-    <h3>Где оформляется ЭТрН?</h3>
-    <p>В ГИС ЭПД, через оператора электронного документооборота.</p>
-    <h3>Нужно ли менять оператора ЭДО?</h3>
-    <p>Нет. Накладные отправляются через оператора, с которым вы уже работаете, по его тарифу за документ.</p>
-    <h3>Откуда берутся данные рейса?</h3>
-    <p>Из вашей заявки или выгрузки учётной программы: груз, адреса, машина, водитель, перевозчик.</p>
-    <h3>Сервис подписывает накладные за нас?</h3>
-    <p>Нет. Подписывают участники перевозки; сервис собирает накладную и показывает, чьей подписи не хватает.</p>
-    <h3>Можно уже пользоваться?</h3>
-    <p>Пока нет — в подготовке. Сначала мы проверяем, нужен ли сервис логистам.</p>
+    <div class="stack"><h2>Вопросы и ответы</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Где оформляется ЭТрН?</h3><p>В ГИС ЭПД, через оператора электронного документооборота.</p></div>
+      <div class="split flip"><h3>Нужно ли менять оператора ЭДО?</h3><p>Нет. Накладные отправляются через оператора, с которым вы уже работаете, по его тарифу за документ.</p></div>
+      <div class="split flip"><h3>Откуда берутся данные рейса?</h3><p>Из вашей заявки или выгрузки учётной программы: груз, адреса, машина, водитель, перевозчик.</p></div>
+      <div class="split flip"><h3>Сервис подписывает накладные за нас?</h3><p>Нет. Подписывают участники перевозки; сервис собирает накладную и показывает, чьей подписи не хватает.</p></div>
+      <div class="split flip"><h3>Можно уже пользоваться?</h3><p>Пока нет — в подготовке. Сначала мы проверяем, нужен ли сервис логистам.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Сколько у вас рейсов</h2>
-    <p><label>Рейсов с ЭТрН в месяц<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— выберите —</option><option>До 100</option><option>100–500</option><option>500–2 000</option><option>Больше 2 000</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Начать</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Сколько у вас рейсов</h2>
+    </div>
+    <div class="tile stack">
+      <label>Рейсов с ЭТрН в месяц<select data-ev-focus="form_start"><option value="">— выберите —</option><option>До 100</option><option>100–500</option><option>500–2 000</option><option>Больше 2 000</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Начать</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>ЭТрН по рейсам</b></p>
   <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
-  <p class="muted">Оформление и контроль ЭТрН по вашим данным через вашего оператора ЭДО. Подписывают участники перевозки; плата оператору — по его тарифу.</p>
+  <p>Оформление и контроль ЭТрН по вашим данным через вашего оператора ЭДО. Подписывают участники перевозки; плата оператору — по его тарифу.</p>
 </div></footer>
 
 </body>
